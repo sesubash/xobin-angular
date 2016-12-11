@@ -1,0 +1,47 @@
+<div>
+<header></header>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-sm-6"  dir-paginate="user in users | itemsPerPage: pageSize" current-page="currentPage" >
+			<!--ng-repeat="user in users | limitTo : 10"-->
+            <div class="card hovercard animated fadeIn">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img class="img-responsive" alt="" src="img/user.jpg">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a ng-href="#!/users/{{user._Id}}" ng-bind="user._DisplayName">John</a>
+                    </div>
+                    <div class="desc location" ng-bind="user._Location">Bangalore</div>
+                    <div class="desc reputation" ng-bind="user._Reputation | number">10</div>
+                    <div class="desc about" ng-bind-html="user._AboutMe | renderHtml">Tech geek</div>
+                </div>
+                <!-- <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-behance"></i>
+                    </a>
+                </div> -->
+            </div>
+
+        </div>
+
+	</div>
+
+	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="views/dirPagination.tpl.html"></dir-pagination-controls>
+</div>
+</footer></footer>
+</div>

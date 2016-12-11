@@ -1,0 +1,69 @@
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+  max-width: 150px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #f67864;
+  color: #fff;
+}
+
+.card{
+  min-height: 275px;
+}
+
+.card.hovercard {
+    box-shadow: 0px 1px 1px 1px #ccc;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.card.hovercard:hover {
+  box-shadow: 0px 2px 3px 3px #ccc
+}
+
+.card .title{
+  text-transform: capitalize;
+}
+
+.card .avatar{
+  max-width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.card .desc.reputation{
+  font-weight: bold;
+}
+
+.card .desc.about {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -moz-line-clamp: 3;
+    -moz-box-orient: vertical;
+    -ms-line-clamp: 3;
+    -ms-box-orient: vertical;
+    -o-line-clamp: 3;
+    -o-box-orient: vertical;
+    overflow: hidden;
+    height: 65px;
+}
+
+
+.user-detail {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-detail .avatar {
+    max-width: 200px;
+    margin: 5px 0;
+}
+
+.posts .info{
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}

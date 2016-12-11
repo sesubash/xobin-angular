@@ -1,0 +1,26 @@
+{
+  "name": "stackoverflow-clone",
+  "authors": [
+    "Subash <sesubash@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.0",
+    "jquery": "^3.1.1",
+    "angular-ui-router": "^0.3.2",
+    "x2js": "https://github.com/abdmob/x2js",
+    "bootstrap": "^3.3.7",
+    "angularUtils-pagination": "angular-utils-pagination#^0.11.1",
+    "angular-filter": "^0.5.14"
+  }
+}
